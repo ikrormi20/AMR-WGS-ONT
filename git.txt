@@ -91,6 +91,11 @@ git checkout master
 ###Now merge another branch into the current branch
 git merge mynew-branch 
 
+###Delete Branches 
+git push origin --delete mynew-branch #To delete a remote branch
+git branch -d mynew-branch # -d deletes branch only if it has already been merged
+git branch -D mynew-branch # -D force deletes branch irrespective of its merged status
+
 
 
 
