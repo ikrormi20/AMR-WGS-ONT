@@ -1,0 +1,10 @@
+{
+	"fastqExtension": "fastq.gz",
+	"fastaExtension":"fasta",
+	"fastqDir": "data/",
+	"outputDir1": "FlyeAssembled/",
+	"outputDir2": "medaka/",
+	"outputDir3": "abricateResults",
+	"logDir": "logs/",
+	"benchmarkDir": "benchmarks"
+}
