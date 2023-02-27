@@ -10,7 +10,7 @@ ls -a # To display files including hidden files
  #The staging area is sort of like a rough draft space. It is where we can add updated versions of files or remove files in order to choose what we want to include in our next commit. In the .git folder the staging area is represented by a file called index.
  #And finally the commit history is basically where our commits live after they’ve been made.In the .git folder the commit history is represented by a folder called objects.
 
-#Add files to the staging
+#Add files to the staging area
 git add filename 
 git status
 #Make commit
@@ -33,35 +33,35 @@ git add . #Adding the changes to the existing git repository
 git reset HEAD -- amr.py #Removing files from the staging area or unstaging the files (In case of not wanting to commit the changes in amr.py)
 git commit -m "In this version the config-amr.json is updated"
 
+################################################################################################################################
 
-
-#Branch
+###############Branch
 What is a branch
 Making a commit on a branch
 Making a second branch
 Switching branches
 Exercise: Working with a local repository and branches
 
-#Merging
+###################Merging
 Merging a branch
 Introducing vi/vim
 Doing a three-way merge
 Merging with conflicts
 Exercise: Merging
 
-#Working with remote repositories
+#################Working with remote repositories
 Introducing remote repositories
 Connecting to Github using SSH
 Pushing to a remote repository
 Updating a remote repository
 
-#Working with Others
+##########################Working with Others
 Fetching changes
 Working at the same time as others
 Rebasing Part 1
 Rebasing Part 2
 Exercise: Remote repositories and working with others
-
+#####################################################################################################################################################
 ######################### Git Branches: List, Create, Switch to, Merge, Push, & Delete #######################
 Git lets you branch out from the original code base. This lets you more easily work with other developers, and gives you a lot of flexibility in your workflow.
 #See which branch you're on
