@@ -62,5 +62,32 @@ Rebasing Part 1
 Rebasing Part 2
 Exercise: Remote repositories and working with others
 
+######################### Git Branches: List, Create, Switch to, Merge, Push, & Delete #######################
+Git lets you branch out from the original code base. This lets you more easily work with other developers, and gives you a lot of flexibility in your workflow.
+#See which branch you're on
+git status
+
+####List all branches
+git branch #to see local branches
+git branch -r #to see remote branches
+git branch -a #to see all local and remote branches
+####To create a new branch
+git branch mynew-branch 
+####To switch to mynew-branch in local repo
+git checkout mynew-branch 
+####To switch to mynew-branch in remote repo
+git checkout --track origin/mynew-branch
+###To get a list of all branches from the remote
+git pull
+####Push to a branch
+###If your local branch does not exist on the remote, run either of these commands
+git push -u origin mynew-branch
+git push -u origin HEAD  # HEAD is a reference to the top of the current branch. So it's an easy way to push to a branch of the same name
+git push #If your local branch already exists on the remote, run this command
+
+#####Merge a branch
+
+
+
 
 
