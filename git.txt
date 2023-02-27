@@ -1,0 +1,66 @@
+#Working with local git repositories
+mkdir projectname #Create a directory for project
+git init  # To create or initialise a git repository
+ls -a # To display files including hidden files
+
+#The repository that we have on our computer is referred to as the local repository.
+#The repository that resides in GitHub, GitLab and Bitbucket services in the cloud is referred to as the remote repository.
+#There are three different spaces inside Git — the working directory, staging area, and commit history.
+ #The working directory is basically represented by the contents of our project folder. It is sort of like a work bench, where we can add, edit, and delete files in our project.
+ #The staging area is sort of like a rough draft space. It is where we can add updated versions of files or remove files in order to choose what we want to include in our next commit. In the .git folder the staging area is represented by a file called index.
+ #And finally the commit history is basically where our commits live after they’ve been made.In the .git folder the commit history is represented by a folder called objects.
+
+#Add files to the staging
+git add filename 
+git status
+#Make commit
+git commit -m "This is the first commit" # -m is for message
+#Configure the user email and user name 
+git config user.email "ikrormi08@gmail.com"
+git config user.name "ikrormi20" #Password Rungsung23
+#To list all the commits we have in our project in reverse chronological order
+git log
+#The commit has a 40 character commit hash. A commit hash is 40 letters and numbers that act as a name for the commit or a way to refer to it
+
+#A branch in Git
+A branch is a pointer to a commit. The default branch in Git is called master or main.
+git branch #To see a list of all branches
+
+#Working with an existing project
+git status #It will warn the changes in the files
+git add . #Adding the changes to the existing git repository 
+#In our example to add all the modified version of amr.py and config-amr.json (assuming these two files are modified)
+git reset HEAD -- amr.py #Removing files from the staging area or unstaging the files (In case of not wanting to commit the changes in amr.py)
+git commit -m "In this version the config-amr.json is updated"
+
+
+
+#Branch
+What is a branch
+Making a commit on a branch
+Making a second branch
+Switching branches
+Exercise: Working with a local repository and branches
+
+#Merging
+Merging a branch
+Introducing vi/vim
+Doing a three-way merge
+Merging with conflicts
+Exercise: Merging
+
+#Working with remote repositories
+Introducing remote repositories
+Connecting to Github using SSH
+Pushing to a remote repository
+Updating a remote repository
+
+#Working with Others
+Fetching changes
+Working at the same time as others
+Rebasing Part 1
+Rebasing Part 2
+Exercise: Remote repositories and working with others
+
+
+
