@@ -1,0 +1,4 @@
+flye 2.9.1-b1781
+medaka 1.7.3
+abricate 1.0.1
+
